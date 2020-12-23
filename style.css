@@ -1,0 +1,221 @@
+body{
+    text-align: center;
+    background-color: rgba(222, 226, 233, 0.486);
+    margin: auto;
+}
+#navbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(178, 182, 190);
+    padding: 10px;
+    z-index: 1;
+    text-align: right;
+}
+.navlink{
+    color: #0f0e0e;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#sect1{
+    position: relative;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+#main-img {
+    height : 100vh;
+    width: 100%;
+    display: block;
+}
+.slidetop{
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    transform: translate(-10%, -10%);
+}
+.slidecenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#vendor{
+    position: absolute;
+    bottom: 30%;
+    right: 40%;
+}
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    background-color: rgb(77, 67, 67);
+    margin: 0 4px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    bottom: 30px;
+}  
+.offering {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px;
+    grid-column-gap: 30px;
+    padding: 0px 20px;
+}
+#sect3{
+    padding: 30px 250px;
+    margin-top: 140px;
+    background-color: rgb(224, 216, 193);
+}
+#sect4{
+    padding: 0px 270px 0px 270px;
+    margin: 50px auto;
+}
+.dot2 {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    background-color: rgb(77, 67, 67);
+    margin: 0 4px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    top: 10px;
+} 
+.dot1 {
+    background-color: rgb(153, 147, 147);
+}
+.vendors{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    height: 200px;
+    margin: 20px;
+}
+.photography {
+    border: 1px solid #4b4e4b81;
+    margin: auto 20px;
+    box-shadow: 2px 2px 2px -1px gray;
+}
+footer{
+    padding: 20px 200px;
+    margin: 150px auto auto auto;
+    background-color:  rgb(224, 216, 193);
+}
+input {
+    padding: 10px;
+    width: 20%;
+    border: 1px solid #4b4e4b81;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px -1px gray;
+    background-color: rgb(235, 229, 220);
+}
+@media (max-width: 1100px) {
+    .slidetop{
+        position: absolute;
+        top: 25%;
+        left: 38%;
+    }
+    .slidecenter{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    #vendor{
+        position: absolute;
+        bottom: 20%;
+        right: 34%;
+    }
+    .offering {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 200px 200px;
+        grid-gap: 140px 30px;
+    }
+    #sect3{
+        padding: 30px 50px;
+        margin-top: 160px;
+        background-color: rgb(224, 216, 193);
+    }
+    #sect4{
+        padding: 0px 10px;
+        margin: 50px auto;
+    }
+    .vendors{
+        display: flex;
+        flex-direction: row;
+        height: 400px;
+        overflow: hidden;
+    }
+    footer{
+        padding: 20px 50px;
+        margin: 70px auto auto auto;
+        background-color:  rgb(224, 216, 193);
+    }
+    input {
+        padding: 10px;
+        width: 30%;
+        border: 1px solid #4b4e4b81;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px -1px gray;
+        background-color: rgb(235, 229, 220);
+    }
+}
+@media (max-width: 800px) {
+    .slidetop{
+        position: absolute;
+        top: 25%;
+        left: 35%;
+    }
+}
+@media (max-width: 500px) {
+    .slidetop{
+        position: absolute;
+        top: 10%;
+        left: 25%;
+    }
+    .slidecenter{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    #vendor{
+        position: absolute;
+        bottom: 4%;
+        right: 34%;
+    }
+    .dot {
+        cursor: pointer;
+        height: 10px;
+        width: 10px;
+        background-color: rgb(77, 67, 67);
+        margin: 0 4px;
+        border-radius: 50%;
+        display: inline-block;
+        position: relative;
+        bottom: 0px;
+    }
+    .offering {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 100px 100px 100px 100px;
+        grid-gap: 140px 30px;
+    }
+    #sect3{
+        padding: 10px 10px;
+        margin-top: 130px;
+        background-color: rgb(224, 216, 193);
+    }
+    #sect4{
+        padding: 0px 10px;
+        margin: 50px auto;
+    }
+    .vendors{
+        display: flex;
+        flex-direction: column;
+        height: 460px;
+
+    }
+}
